@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e619c1b9db.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      Home | Yolbnb
+    </title>
+  </head>
+  <body>
+    <header class="flex bottom-b navbar">
+      <div class="top-left_logo shortwidth">
+        <i class="fab fa-airbnb"></i>
+      </div>
+      <ul class="top-right shortwidth flex">
+        <!-- Insert below the links to each page -->
+        <a href="" class="logIn padding topRightBtn">Sign in</a>
+        <a href="" class="signUp padding topRightBtn">Sign up</a>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="top-pic">
+        <img src="./img/bg-image.jpg" class="top-pic__pic" />
+      </div>
+      <!-- Insert bnbList below -->
+      <div class="flex wrap bnbList"></div>
+      </div>
+      <div class="pageWrapper bottom-b flex">
+        <span class="page-text">Page # of ##</span>
+        <!-- Insert below the link to the next page -->
+        <a href="" class="nextPageArrow"><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__logo"><i class="fab fa-airbnb"></i></div>
+      <div class="reserveRights">
+        © 2020 Yol Pak. All rights not reserved.
+      </div>
+    </footer>
+    <div class="langSelect">
+      <select id="js-lang" class="langSelect__langSelect">
+        <option value="en">English</option>
+        <option value="kr">한국어</option>
+      </select>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
