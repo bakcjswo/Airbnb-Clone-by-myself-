@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./signIn.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e619c1b9db.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      Sign In | Yolbnb
+    </title>
+  </head>
+  <body>
+    <header class="flex bottom-b navbar">
+      <a href="./index.html" class="toHomeLink"
+        ><div class="top-left_logo shortwidth">
+          <i class="fab fa-airbnb"></i> Yolbnb
+        </div></a
+      >
+      <ul class="top-right shortwidth flex noMargin" style="85">
+        <!-- Insert below the links to each page -->
+        <a href="./signIn.html" class="logIn padding topRightBtn">Sign in</a>
+        <a href="./signUp.html" class="signUp padding topRightBtn">Sign up</a>
+      </ul>
+    </header>
+    <div class="container bottom-b">
+      <div class="continueWith" style="width: 420px">
+        <!-- Insert below the links to each page -->
+        <a href="" class="google"
+          ><img src="./img/google_logo.png" class="googleLogo" />
+          <div class="googleText">Log in with Google</div></a
+        >
+        <a href="" class="kakao"
+          ><img src="./img/kakaotalk_logo.svg" class="kakaoLogo" />
+          <div class="kakaoText">Log in with Kakao</div></a
+        >
+        <div class="orTextContainer">
+          <div class="straightLine Left center"></div>
+          <span class="orText">or</span>
+          <div class="straightLine Right center"></div>
+        </div>
+        <form action="/authenticate" class="emailPw">
+          <div class="emailWrapper wrapper">
+            <input
+              type="email"
+              class="email input"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="pwWrapper wrapper">
+            <input type="pw" class="pw input" placeholder="Password" />
+          </div>
+          <button class="logInBtn">Log in</button>
+          <div class="ifNoAccount">
+            <div class="noAccText">Don't have an account?</div>
+            <!-- Insert below the link to Sign up page -->
+            <a href="./signUp.html" class="emailPw__signUp">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__logo"><i class="fab fa-airbnb"></i></div>
+      <div class="reserveRights">
+        © 2020 Yol Pak. All rights not reserved.
+      </div>
+    </footer>
+    <div class="langSelect">
+      <select id="js-lang" class="langSelect__langSelect">
+        <option value="en">English</option>
+        <option value="kr">í•œêµ­ì–´</option>
+      </select>
+    </div>
+  </body>
+</html>

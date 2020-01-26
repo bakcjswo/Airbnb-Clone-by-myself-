@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./signIn.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e619c1b9db.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      로그인 | Yolbnb
+    </title>
+  </head>
+  <body>
+    <header class="flex bottom-b navbar">
+      <a href="./index.html" class="toHomeLink"
+        ><div class="top-left_logo shortwidth">
+          <i class="fab fa-airbnb"></i> Yolbnb
+        </div></a
+      >
+      <ul class="top-right shortwidth flex noMargin" style="85">
+        <!-- Insert below the links to each page -->
+        <a href="./signIn.html" class="logIn padding topRightBtn">로그인</a>
+        <a href="./signUp.html" class="signUp padding topRightBtn">회원가입</a>
+      </ul>
+    </header>
+    <div class="container bottom-b">
+      <div class="continueWith" style="width: 420px">
+        <!-- Insert below the links to each page -->
+        <a href="" class="google"
+          ><img src="./img/google_logo.png" class="googleLogo" />
+          <div class="googleText">구글 계정으로 로그인</div></a
+        >
+        <a href="" class="kakao"
+          ><img src="./img/kakaotalk_logo.svg" class="kakaoLogo" />
+          <div class="kakaoText">카카오 계정으로 로그인</div></a
+        >
+        <div class="orTextContainer">
+          <div class="straightLine Left center"></div>
+          <span class="orText">또는</span>
+          <div class="straightLine Right center"></div>
+        </div>
+        <form action="/authenticate" class="emailPw">
+          <div class="emailWrapper wrapper">
+            <input type="email" class="email input" placeholder="이메일 주소" />
+          </div>
+          <div class="pwWrapper wrapper">
+            <input type="pw" class="pw input" placeholder="비밀번호" />
+          </div>
+          <button class="logInBtn">로그인</button>
+          <div class="ifNoAccount">
+            <div class="noAccText">아직 회원이 아니신가요?</div>
+            <!-- Insert below the link to Sign up page -->
+            <a href="./signUp.html" class="emailPw__signUp">지금 가입하기</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__logo"><i class="fab fa-airbnb"></i></div>
+      <div class="reserveRights">
+        © 2020 Yol Pak. All rights not reserved.
+      </div>
+    </footer>
+    <div class="langSelect">
+      <select
+        id="js-lang"
+        class="langSelect__langSelect"
+        onchange="getSelectedLang(this)"
+      >
+        <option value="kr">한국어</option
+        ><option value="en">English</option>
+      </select>
+    </div>
+    <script type="text/javascript" src="./js-lang.js"></script>
+  </body>
+</html>

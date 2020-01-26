@@ -1,0 +1,249 @@
+@import "reset.css";
+
+.topRightBtn:hover {
+  border-bottom: 2px solid;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.top-right.shortwidth.flex.noMargin {
+  width: 200px;
+}
+
+.bottom-b {
+  border-bottom: 1px double #cbd5e0;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.noMargin {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.shortwidth {
+  width: 33%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.padding {
+  margin-right: 30px;
+  padding-top: 7%;
+}
+
+.top-left_logo {
+  padding-right: 63%;
+  padding-left: 10%;
+  font-size: 35px;
+  font-weight: 400;
+  color: #ff7977;
+  display: flex;
+  padding-top: 30px;
+}
+
+.top-right {
+  font-size: 17px;
+  color: #484848;
+}
+
+a {
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  color: #a0aec2;
+}
+
+.footer__logo {
+  margin-right: 10px;
+}
+
+.langSelect {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.langSelect__langSelect {
+  width: 15%;
+  border-radius: 0.125rem;
+  text-align: left;
+  border-width: 1px;
+  border-color: #718096;
+  padding: 0.5rem;
+}
+
+.container {
+  margin-top: 10%;
+  padding-bottom: 200px;
+}
+
+.continueWith {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  border: 1px solid #cbd5e0;
+  width: 420px;
+  border-radius: 10px;
+  padding: 50px 1px;
+  margin-left: 36%;
+}
+
+.googleLogo {
+  height: 6%;
+  width: 6%;
+  margin-right: 10px;
+  padding: 2px 2px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.google {
+  width: 30%;
+  border: 1px solid #4285f4;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #4285f4;
+  color: white;
+  margin-bottom: 8px;
+  display: flex;
+  width: 300px;
+}
+
+.googleText {
+  padding-top: 3px;
+  font-weight: 400;
+}
+
+.kakaoLogo {
+  height: 6%;
+  width: 6%;
+  margin-right: 10px;
+  padding: 2px 2px;
+}
+
+.kakao {
+  width: 30%;
+  border: 1px solid #f8e211;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f8e211;
+  color: #4b4643;
+  display: flex;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.kakaoText {
+  padding-top: 3px;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+.orTextContainer {
+  display: flex;
+}
+
+.straightLine {
+  background-color: #cbd5e0;
+  height: 1px;
+  width: 134px;
+  margin-top: 8px;
+}
+
+.orText {
+  margin: 0px 20px;
+}
+
+.input {
+  padding: 10px 10px;
+  width: 300px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #989ea5;
+}
+
+.email {
+  background-image: url(./img/envelope-regular.svg);
+  background-repeat: no-repeat;
+  background-position: 290px 7px;
+  background-size: 18px;
+}
+
+.pw {
+  background-image: url(./img/lock-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 290px 7px;
+  background-size: 18px;
+}
+
+.logInBtn {
+  margin: 30px 90px;
+  height: 50px;
+  background-color: #ff5a5f;
+  border: 1px solid #ff5a5f;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  width: 320px;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 20px 90px;
+}
+
+.ifNoAccount {
+  display: flex;
+  align-content: center;
+  padding: 0px 140px;
+  justify-content: space-between;
+}
+
+.emailPw__signUp {
+  font-weight: 600;
+  color: #008489;
+}
+
+.emailPw__signUp:hover {
+  border-bottom: 2px solid;
+}
+
+.noAccText {
+  font-weight: 400;
+}
