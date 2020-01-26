@@ -62,10 +62,15 @@
       </div>
     </footer>
     <div class="langSelect">
-      <select id="js-lang" class="langSelect__langSelect">
+      <select
+        id="jsLang"
+        class="langSelect__langSelect"
+        onchange="getSelectedLang(this)"
+      >
         <option value="en">English</option>
-        <option value="kr">í•œêµ­ì–´</option>
+        <option value="kr">한국어</option>
       </select>
     </div>
+    <script type="text/javascript" src="./js-lang.js"></script>
   </body>
 </html>
