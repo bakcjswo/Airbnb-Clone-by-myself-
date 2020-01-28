@@ -1,3 +1,10 @@
+enDirectory1 = window.location.pathname.substring(
+  window.location.pathname.lastIndexOf("/"),
+  ""
+);
+
+enDirectory2 = enDirectory1.substring(enDirectory1.lastIndexOf("/"), "");
+
 function getSelectedLang() {
   e = document.querySelector("#jsLang");
 
@@ -5,9 +12,12 @@ function getSelectedLang() {
 
   if (output == "kr") {
     window.location.pathname =
-      "C:/Users/bakcj/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/Coding/Airbnb-Clone-by-myself-/KR/index.html";
+      window.location.pathname.substring(
+        window.location.pathname.lastIndexOf("/"),
+        ""
+      ) + "/KR/index.html";
+    console.log(window.location.pathname);
   } else if (output == "en") {
-    window.location.pathname =
-      "C:/Users/bakcj/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/Coding/Airbnb-Clone-by-myself-/index.html";
+    window.location.pathname = enDirectory2 + "/index.html";
   }
 }
